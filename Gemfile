@@ -50,6 +50,7 @@ group :test do
   gem 'factory_girl'
   gem 'cucumber-rails-training-wheels'
   gem 'spork'
+  gem 'email_spec'
 end
 
 gem 'devise', "~> 1.4.3"
