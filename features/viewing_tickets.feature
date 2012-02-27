@@ -5,12 +5,15 @@ Feature: Viewing tickets
 	
 
 	Background:
-		Given there is a project called "TextMate 2"
-		And that project has a ticket:
+		Given there are the following users:
+			| email						| password 	|
+			| dheeraj@mobiporter.com	| password 	|		
+		And there is a project called "TextMate 2"
+		And "dheeraj@mobiporter.com" has created a ticket for this project:
 			| title				| description 					|
 			| Make it shiny!	| Gradients!  Starbusts! Oh my! |
 		And there is a project called "Internet Explorer"
-		And that project has a ticket:
+		And "dheeraj@mobiporter.com" has created a ticket for this project:
 			| title					| description 	|
 			| Standards compliance	| Isn't a joke.	|
 		And I am on the homepage

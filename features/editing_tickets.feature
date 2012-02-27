@@ -4,8 +4,12 @@ Feature: Editing tickets
 	I want a form to edit the tickets
 	
 	Background:
-		Given there is a project called "TextMate 2"
-		And that project has a ticket:
+		Given there are the following users:
+			| email						| password 	|
+			| dheeraj@mobiporter.com	| password 	|	
+		And I am signed in as them
+		And there is a project called "TextMate 2"	
+		And "dheeraj@mobiporter.com" has created a ticket for this project:
 			| title				| description 					|
 			| Make it shiny!	| Gradients!  Starbusts! Oh my! |
 		And I am on the homepage
