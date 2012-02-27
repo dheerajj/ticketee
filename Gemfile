@@ -51,3 +51,5 @@ group :test do
   gem 'cucumber-rails-training-wheels'
   gem 'spork'
 end
+
+gem 'devise', "~> 1.4.3"
