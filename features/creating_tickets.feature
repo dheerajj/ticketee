@@ -4,19 +4,18 @@ Feature: Creating Tickets
 	I want to be able to select a project and do that
 	
 	Background:
-		Given there is a project called "Internet Explorer"
-		And there are the following users:
+		Given there are the following users:
 		| email						| password	|
 		| dheeraj@mobiporter.com	| password 	|
+		And there is a project called "Internet Explorer"		
+		And "dheeraj@mobiporter.com" can view the "Internet Explorer" project
 		And I am on the homepage
 		When I follow "Internet Explorer"
-		And I follow "New Ticket"
-		Then I should see "You need to sign in or sign up before continuing."
-		When I fill in "Email" with "dheeraj@mobiporter.com"
-		And I fill in "Password" with "password"
-		And I press "Sign in"
+		Then I should see "You need to sign in or sign up before continuing"
+		And I am signed in as them
 		Then I should see "New Ticket"
-		
+		And I follow "New Ticket"
+				
 	Scenario: Creating a Ticket
 		When I fill in "Title" with "Non-standards compliance"
 		And I fill in "Description" with "My pages are ugly!"

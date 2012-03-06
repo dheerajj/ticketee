@@ -9,6 +9,7 @@ Feature: Deleting tickets
 			| dheeraj@mobiporter.com	| password 	|	
 		And I am signed in as them
 		Given there is a project called "TextMate 2"
+		And "dheeraj@mobiporter.com" can view the "TextMate 2" project
 		And "dheeraj@mobiporter.com" has created a ticket for this project:
 			| title				| description 					|
 			| Make it shiny!	| Gradients!  Starbusts! Oh my! |
