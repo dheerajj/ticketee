@@ -75,7 +75,7 @@ GEM
       multi_json (~> 1.0)
     factory_girl (2.6.0)
       activesupport (>= 2.3.9)
-    ffi (1.0.11)
+    ffi (1.0.9-x86-mingw32)
     gherkin (2.9.0-x86-mingw32)
       json (>= 1.4.6)
     hike (1.2.1)
@@ -189,6 +189,7 @@ DEPENDENCIES
   dynamic_form
   email_spec
   factory_girl
+  ffi (= 1.0.9)
   jquery-rails
   rails (= 3.1.1)
   rspec-rails (~> 2.5)

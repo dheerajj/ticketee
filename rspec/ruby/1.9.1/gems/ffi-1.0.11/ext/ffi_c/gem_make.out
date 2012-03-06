@@ -1,0 +1,37 @@
+d:/RailsInstaller/Ruby1.9.2/bin/ruby.exe extconf.rb 
+checking for ffi.h... no
+checking for ffi.h in /usr/local/include... no
+checking for rb_thread_blocking_region()... yes
+checking for ruby_thread_has_gvl_p()... yes
+checking for ruby_native_thread_p()... yes
+checking for rb_thread_call_with_gvl()... yes
+creating extconf.h
+creating Makefile
+
+make
+Makefile:160: warning: overriding commands for target `D:/dj/My'
+Makefile:153: warning: ignoring old commands for target `D:/dj/My'
+Makefile:160: warning: overriding commands for target `Documents/Aptana'
+Makefile:153: warning: ignoring old commands for target `Documents/Aptana'
+Makefile:160: warning: overriding commands for target `Studio'
+Makefile:153: warning: ignoring old commands for target `Studio'
+Makefile:160: warning: overriding commands for target `3'
+Makefile:153: warning: ignoring old commands for target `3'
+libffi.mk:6: warning: overriding commands for target `Documents/Aptana'
+Makefile:160: warning: ignoring old commands for target `Documents/Aptana'
+libffi.mk:6: warning: overriding commands for target `Studio'
+Makefile:160: warning: ignoring old commands for target `Studio'
+libffi.mk:6: warning: overriding commands for target `3'
+Makefile:160: warning: ignoring old commands for target `3'
+d:/RailsInstaller/Ruby1.9.2/bin/ruby -e "puts 'EXPORTS', 'Init_ffi_c'"  > ffi_c-i386-mingw32.def
+Configuring libffi
+configure: WARNING: Libtool does not cope well with whitespace in `pwd`
+make -C "/d/dj/My Documents/Aptana Studio 3 Workspace/ticketee/rspec/ruby/1.9.1/gems/ffi-1.0.11/ext/ffi_c/libffi"
+make[1]: Entering directory `/d/dj/My Documents/Aptana Studio 3 Workspace/ticketee/rspec/ruby/1.9.1/gems/ffi-1.0.11/ext/ffi_c/libffi'
+make "AR_FLAGS=" "CC_FOR_BUILD=" "CFLAGS=" "CXXFLAGS=" "CFLAGS_FOR_BUILD=" "CFLAGS_FOR_TARGET=" "INSTALL=/usr/bin/install -c" "INSTALL_DATA=/usr/bin/install -c -m 644" "INSTALL_PROGRAM=/usr/bin/install -c" "INSTALL_SCRIPT=/usr/bin/install -c" "JC1FLAGS=" "LDFLAGS=" "LIBCFLAGS=" "LIBCFLAGS_FOR_TARGET=" "MAKE=make" "MAKEINFO=/bin/sh "/d/dj/My Documents/Aptana Studio 3 Workspace/ticketee/rspec/ruby/1.9.1/gems/ffi-1.0.11/ext/ffi_c/libffi/missing" --run makeinfo " "PICFLAG=" "PICFLAG_FOR_TARGET=" "RUNTESTFLAGS=" "SHELL=/bin/sh" "exec_prefix=/usr/local" "infodir=/usr/local/share/info" "libdir=/usr/local/lib" "prefix=/usr/local" "AR=ar" "AS=as" "CC=gcc" "CXX=g++" "LD=d:/railsinstaller/devkit/mingw/mingw32/bin/ld.exe" "NM=/usr/mingw/bin/nm" "RANLIB=ranlib" "DESTDIR=" all-recursive
+make[2]: Entering directory `/d/dj/My Documents/Aptana Studio 3 Workspace/ticketee/rspec/ruby/1.9.1/gems/ffi-1.0.11/ext/ffi_c/libffi'
+make[2]: *** No rule to make target `Documents/Aptana'.  Stop.
+make[2]: Leaving directory `/d/dj/My Documents/Aptana Studio 3 Workspace/ticketee/rspec/ruby/1.9.1/gems/ffi-1.0.11/ext/ffi_c/libffi'
+make[1]: *** [all] Error 2
+make[1]: Leaving directory `/d/dj/My Documents/Aptana Studio 3 Workspace/ticketee/rspec/ruby/1.9.1/gems/ffi-1.0.11/ext/ffi_c/libffi'
+make: *** ["/d/dj/My] Error 2
